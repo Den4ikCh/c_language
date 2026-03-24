@@ -1,4 +1,5 @@
 ﻿#define _USE_MATH_DEFINES
+#define _CRT_SECURE_NO_WARNINGS
 
 #include <math.h>
 #include <iostream>
@@ -9,6 +10,9 @@ int main()
     double current = pow(1, 3) / 1;
     int n = 0;
     double epsilon = 1e-6;
+    double x;
+    scanf("%lf", &x);
+    printf("%f", x);
 
     while (15 * M_E - sum > epsilon) {
         sum += current;
